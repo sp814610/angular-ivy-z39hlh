@@ -35,10 +35,12 @@
           <input
             class="form-control me-2"
             type="search"
-            placeholder="Search"
-            aria-label="Search"
+            [placeholder]="'search' | translate"
+            [attr.aria-label]="'search' | translate"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit">
+            {{ 'search' | translate }}
+          </button>
         </form>
       </div>
     </div>
